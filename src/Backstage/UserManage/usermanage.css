@@ -1,0 +1,30 @@
+.all{
+    position: absolute;
+    width:100%;
+    height: 909px;
+    border: 1px solid rgb(241, 241, 241);
+}
+.one{
+    width:97%;
+    height:50px;
+    border-bottom: 1px solid black;
+    line-height: 40px;
+    margin-left: 40px;
+    margin-top: 10px;
+    font-size: 1.5em;
+   
+}
+.editable-cell {
+    position: relative;
+  }
+  
+  .editable-cell-value-wrap {
+    padding: 5px 12px;
+    cursor: pointer;
+  }
+  
+  .editable-row:hover .editable-cell-value-wrap {
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    padding: 4px 11px;
+  }

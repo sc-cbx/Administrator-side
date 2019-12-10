@@ -1,0 +1,65 @@
+.all{
+    position: absolute;
+    width: 1659px;
+    height: 909px;
+}
+.one{width: 1600px;
+    height:50px;
+    border-bottom: 1px solid black;
+    line-height: 40px;
+    margin-left: 40px;
+    margin-top: 10px;
+    font-size: 1.5em;
+   
+}
+.down{
+    width: 1000px;
+    height: 800px;
+}
+.left{
+    width: 300px;
+    height: 400px;
+    line-height: 300px;
+    margin-left: 50px;
+    float: left;
+}
+.right{
+    position: absolute;
+    width: 90%;
+    height: 400px;
+    margin-left: 40px;
+    margin-top: 80px;
+}
+.form{
+    width: 90%;
+    height: 800px;
+}
+.item{
+    width: 100%;
+    height: 50px;
+}
+.h1{
+    width: 117px;
+    height: 50px;
+    float: left;
+    font-size: 1.4em;
+    letter-spacing: 2px;
+
+}
+.item1{
+    margin-top: 50px;
+}
+.in1{
+    width: 88.5%;
+    height: 50px;
+
+}
+.suc{
+    width: 90px;
+    height: 40px;
+    margin-left: 90%;
+    margin-top: 70px;
+    font-size: 1.4em;
+    color: aliceblue;
+    background-color:#1890ff;
+}

@@ -1,0 +1,30 @@
+.all{
+    width: 1879px;
+    height: 912px;
+    background-color:rgb(241,241,241);
+}
+
+.leftmenu{
+    width: 220px;
+    height: 805px;
+    float: left;
+    background-color:#262d3a;   
+}
+.h1{
+    color: #9dacc2;
+    text-align: center;
+    height: 55px;
+    line-height: 65px;
+}
+.rightmenu{
+    position: absolute;
+    margin-left: 220px;
+    width: 1650px;
+    height:912px;
+
+}
+.menu{
+    width:220px;
+    height: 842px;
+   
+}

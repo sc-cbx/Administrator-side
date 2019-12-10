@@ -1,0 +1,66 @@
+.login{
+    height: 870px;
+    width: 1880px;
+  
+    /* background: rgba(43, 33, 21, 0.5); */
+    background-repeat: no-repeat;
+    background-image: url('./../img/17.png');
+    background-size: cover; 
+    /* margin:0 auto; */
+ } 
+ .login1{
+
+     width: 200px;
+ }
+ .content{
+     /* margin-top: 50px; */
+     width: 350px;
+     height: 400px;
+     position: relative;
+     top: 110px;
+     left: 130px;
+     border-radius: 20px;
+     /* border-bottom-right-radius: 20px;
+     border-top-left-radius: 20px;
+     border-top-right-radius: 20px; */
+     background-color: rgba(230, 207, 207, 0.479);
+ }
+ .welcome{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-size: 1.9em;
+    letter-spacing: 8px;
+ }
+.name{
+    position: relative;
+    top: 70px;
+    left: 50px;
+    font-size: 1.2em;
+    letter-spacing: 4px;
+}
+.input{
+    margin-top: 8px;
+    width: 220px;
+    height: 40px;
+}
+.password{
+    position: relative;
+    top: 100px;
+    left: 50px;
+    font-size: 1.2em;
+    letter-spacing: 4px;
+}
+.land{
+    position: relative;
+    top: 135px;
+    left: 185px;
+}
+.choose{
+    position: relative;
+    top: 130px;
+    left: 70px;
+}
+.button{
+    margin-left: 20px;
+}

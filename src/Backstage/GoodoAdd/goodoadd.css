@@ -1,0 +1,32 @@
+.all{
+    position: absolute;
+    width: 1659px;
+    height: 909px;
+}
+.one{width: 1600px;
+    height:50px;
+    border-bottom: 1px solid black;
+    line-height: 40px;
+    margin-left: 40px;
+    margin-top: 10px;
+    font-size: 1.5em;
+   
+}
+.down{
+    width: 1000px;
+    height: 800px;
+}
+.left{
+    width: 300px;
+    height: 400px;
+    line-height: 300px;
+    margin-left: 50px;
+    float: left;
+}
+.right{
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    margin-left: 100px;
+    margin-top: 80px;
+}
