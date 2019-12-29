@@ -12,9 +12,6 @@ import HelpAdd from './HelpAdd/helpadd';
 import HelpManage from './HelpManage/helpmanage';
 import OrderFunotionPage from './OrderFunction/orderfunction';
 import OrderManage from './OrderManage/ordermanage';
-import GoodxFunctionPage from './GoodxFunction/goodxfunction';
-import GoodxAddPage from './GoodxAdd/goodxadd';
-import GoodxManage from './GoodxManage/goodxmanage';
 import SecgoodsFunction from './SecgoodsFunction/secgoodsfunction';
 import SecgoodsAdd from './SecgoodsAdd/secgoodsadd';
 import SecgoodsManage from './SecgoodsManage/secgoodsmanage';
@@ -95,9 +92,6 @@ export default class Backstage extends React.Component{
                         <Route path="/helpmanage" component={HelpManage}></Route>
                         <Route path="/orderfunction" component={OrderFunotionPage}></Route>
                         <Route path="/ordermanage" component={OrderManage}></Route>
-                        <Route path="/goodxfunction" component={GoodxFunctionPage}></Route>
-                        <Route path="/goodxadd" component={GoodxAddPage}></Route>
-                        <Route path="/goodxmanage" component={GoodxManage}></Route>
                         <Route path="/secgoodsfunction" component={SecgoodsFunction}></Route>
                         <Route path="/secgoodsadd" component={SecgoodsAdd}></Route>
                         <Route path="/secgoodsmanage" component={SecgoodsManage}></Route>
