@@ -1,23 +1,23 @@
 import React from 'react';
 import { Radio,Form,Button, AutoComplete } from 'antd';
-var GoodoFunctionCss=require('./goodofunction.css');
-class GoodoFunctionPage extends React.Component{
+var OrderFunctionCss=require('./orderfunction.css');
+class OrderFunctionPage extends React.Component{
    
     render(){
         const { getFieldDecorator } = this.props.form;
         return(
-            <div className={GoodoFunctionCss.all}>
+            <div className={OrderFunctionCss.all}>
                 <div >
-                    <div className={GoodoFunctionCss.one}>功能管理</div> 
+                    <div className={OrderFunctionCss.one}>功能管理</div> 
                 </div>
                 <div>
-                    <div className={GoodoFunctionCss.two}>
+                    <div className={OrderFunctionCss.two}>
                         <Form>
-                           <Form.Item label="发布权限" >
+                           <Form.Item label="处理权限" >
                             {getFieldDecorator('radio-group1')(
                                 <Radio.Group>
-                                <Radio value="1">仅老师</Radio>
-                                <Radio value="2">自动公开</Radio>
+                                <Radio value="1">仅管理员</Radio>
+                                <Radio value="2">所有人</Radio>
                                
                                 </Radio.Group>,
                             )}
@@ -26,7 +26,7 @@ class GoodoFunctionPage extends React.Component{
                             <Form.Item label="浏览权限">
                                 {getFieldDecorator('radio-group2')(
                                     <Radio.Group>
-                                    <Radio value="1">仅老师</Radio>
+                                    <Radio value="1">仅管理员</Radio>
                                     <Radio value="2">所有人</Radio>
                                 
                                     </Radio.Group>,
@@ -45,5 +45,5 @@ class GoodoFunctionPage extends React.Component{
         )
     }
 }
-const WrappedGoodoFunctionPage = Form.create({ name: 'validate_other' })(GoodoFunctionPage);
-export default WrappedGoodoFunctionPage;
+const WrappedOrderFunctionPage = Form.create({ name: 'validate_other' })(OrderFunctionPage);
+export default WrappedOrderFunctionPage;

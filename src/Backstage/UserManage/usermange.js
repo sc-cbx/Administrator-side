@@ -91,13 +91,13 @@ export default class UserManage extends React.Component{
         this.columns = [
           {
             title: '用户名',
-            dataIndex: 'name',
+            dataIndex: 'username',
             width: '25%',
             editable: true,
           },
           {
-            title: '学号',
-            dataIndex: 'number',
+            title: '性别',
+            dataIndex: 'gender',
             editable: true,
           },
           {
@@ -122,20 +122,20 @@ export default class UserManage extends React.Component{
           dataSource: [
             {
               key: '1',
-              name: '肖露',
-              number: '2018****',
+              username: '肖露',
+              gender: '女',
              email: '223****051@qq.com',
             },
             {
                 key: '2',
-                name: '黄莉',
-                number: '2018****',
+                username: '黄莉',
+                gender: '女',
                 email: '133****122@qq.com',
             },
             {
               key: '3',
-              name: '张宇',
-              number: '2018****',
+              username: '张宇',
+              gender: '女',
               email: '132****226@qq.com',
           },
           ],
@@ -152,8 +152,9 @@ export default class UserManage extends React.Component{
         const { count, dataSource } = this.state;
         const newData = {
           key: 'count',
-          name: '题目',
-          time: '时间',
+          username: '用户名',
+          gender: '性别',
+          email:'邮箱',
         };
         this.setState({
           dataSource: [...dataSource, newData],

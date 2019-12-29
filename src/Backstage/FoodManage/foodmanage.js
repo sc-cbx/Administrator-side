@@ -90,15 +90,15 @@ export default class FoodManage extends React.Component{
         super(props);
         this.columns = [
           {
-            title: '题目',
+            title: '商品名称',
             dataIndex: 'name',
-            width: '45%',
+            width: '30%',
             editable: true,
           },
           {
-            title: '时间',
-            dataIndex: 'time',
-            width: '30%',
+            title: '商品描述',
+            dataIndex: 'content',
+            width: '70%',
           },
           {
             title: 'operation',
@@ -116,13 +116,13 @@ export default class FoodManage extends React.Component{
           dataSource: [
             {
               key: '1',
-              name: '三星镇开展环境 卫生志愿服务活动',
-              time: '2019-06-27至2019-07-08',
+              name: '嗨吃家酸辣粉正宗网红酸辣粉桶装速食粉丝米线',
+              content: '价格实惠，买了两箱，够吃一段时间了，吃完再来回购柳州螺狮粉是我第一个收到的包裹。里面的配料很多，有酸笋，木耳，花生，油炸腐竹等等，吃起来软滑爽口，味道非常的正宗。里面的调料包就有七八包的样子，比在实体店买的一桶的螺蛳粉分量还足吃起来好吃还不贵，经济实惠，很过瘾。',
             },
             {
                 key: '2',
-                name: '组织公众人员参观、学习环保知识',
-                time:'2019-06-27至2019-07-08',
+                name: '嗨吃家酸辣粉正宗网红酸辣粉桶装速食粉丝米线',
+                content:'价格实惠，买了两箱，够吃一段时间了，吃完再来回购柳州螺狮粉是我第一个收到的包裹。里面的配料很多，有酸笋，木耳，花生，油炸腐竹等等，吃起来软滑爽口，味道非常的正宗。里面的调料包就有七八包的样子，比在实体店买的一桶的螺蛳粉分量还足吃起来好吃还不贵，经济实惠，很过瘾。',
             },
           ],
           count: 2,
@@ -183,7 +183,7 @@ export default class FoodManage extends React.Component{
         return(
             <div className={FoodManageCss.all}>
                 <div >
-                    <div className={FoodManageCss.one}>管理活动内容</div> 
+                    <div className={FoodManageCss.one}>商品管理</div> 
 
                 </div>
                 <div>

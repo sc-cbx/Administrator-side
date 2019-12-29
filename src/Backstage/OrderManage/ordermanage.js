@@ -1,6 +1,6 @@
 import React from 'react';
 import { Table, Input, Button, Popconfirm, Form } from 'antd';
-var GoodoManageCss=require('./goodomanage.css')
+var OrderManageCss=require('./ordermanage.css')
 const EditableContext = React.createContext();
 
 const EditableRow = ({ form, index, ...props }) => (
@@ -85,14 +85,26 @@ class EditableCell extends React.Component {
     );
   }
 }
-export default class GoodoManagePage extends React.Component{
+export default class OrderManagePage extends React.Component{
     constructor(props) {
         super(props);
         this.columns = [
           {
-            title: '姓名',
+            title: '买家',
+            dataIndex: 'username',
+            width: '30%',
+            editable: true,
+          },
+          {
+            title: '商品名称',
             dataIndex: 'name',
-            width: '100%',
+            width: '40%',
+            editable: true,
+          },
+          {
+            title: '购买数量',
+            dataIndex: 'number',
+            width: '30%',
             editable: true,
           },
           {
@@ -111,13 +123,15 @@ export default class GoodoManagePage extends React.Component{
           dataSource: [
             {
               key: '1',
-              name: '携手共进',
-   
+              username:'sc',
+              name: '华为手机',
+              number:'1',
             },
             {
-                key: '2',
-                name: '爱心联盟',
-    
+              key: '2',
+              username:'chanyeol',
+              name: '小米手机',
+              number:'1',
             },
           ],
           count: 2,
@@ -133,7 +147,9 @@ export default class GoodoManagePage extends React.Component{
         const { count, dataSource } = this.state;
         const newData = {
             key: 'count',
-            name: '姓名',
+            username:'买家',
+            name: '商品名称',
+            number:'购买数量',
         };
         this.setState({
           dataSource: [...dataSource, newData],
@@ -175,15 +191,12 @@ export default class GoodoManagePage extends React.Component{
       };
     });
         return(
-            <div className={GoodoManageCss.all}>
+            <div className={OrderManageCss.all}>
                 <div >
-                    <div className={GoodoManageCss.one}>管理优秀志愿组织</div> 
+                    <div className={OrderManageCss.one}>订单管理</div> 
 
                 </div>
                 <div>
-                    <Button onClick={this.handleAdd} type="primary" style={{ marginBottom: 16 ,marginTop:20,marginLeft:40}}>
-                    增加
-                    </Button>
                     <Table
                     components={components}
                     rowClassName={() => 'editable-row'}

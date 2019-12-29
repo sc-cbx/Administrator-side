@@ -1,6 +1,7 @@
 import React from 'react';
 import { Form, Upload, Icon, Modal, Input, Button } from 'antd';
 var SecgoodsAddCss=require('./secgoodsadd.css');
+const { TextArea } = Input;
 function getBase64(file) {
     return new Promise((resolve, reject) => {
       const reader = new FileReader();
@@ -48,6 +49,9 @@ export default class SecgoodsAdd extends React.Component{
         );
         return(
             <div className={SecgoodsAddCss.all}>
+            
+                    <div className={SecgoodsAddCss.one}>添加商品</div> 
+                
                 <div className={SecgoodsAddCss.di}>
                     <Form className={SecgoodsAddCss.form}>
                         <Form.Item className={SecgoodsAddCss.item}>
@@ -76,10 +80,10 @@ export default class SecgoodsAdd extends React.Component{
                         </Form.Item>
                         <Form.Item className={SecgoodsAddCss.item}>
                             <h5 className={SecgoodsAddCss.h1}>宝贝介绍：</h5>
-                            <Input className={SecgoodsAddCss.in1}/>
+                            <TextArea rows={4} autoSize  className={SecgoodsAddCss.in1}/>
                         </Form.Item>
                         <Form.Item className={SecgoodsAddCss.item1}>
-                            <div className="clearfix">
+                            <div className={SecgoodsAddCss.clearfix}>
                                 <Upload action="https://www.mocky.io/v2/5cc8019d300000980a055e76" listType="picture-card" fileList={fileList}
                                 onPreview={this.handlePreview} onChange={this.handleChange}> {fileList.length >= 4 ? null : uploadButton}
                                 </Upload>

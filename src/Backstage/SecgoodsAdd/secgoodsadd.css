@@ -12,10 +12,20 @@
       height: 800px;
       border: 1px solid rgb(240, 240, 240);
   }
+  .one{width: 1600px;
+    height:50px;
+    border-bottom: 1px solid black;
+    line-height: 40px;
+    margin-left: 40px;
+    margin-top: 10px;
+    font-size: 1.5em;
+   
+}
   .form{
       width: 80%;
       height: 800px;
-      margin-left: 10%;
+      margin-top: 20px;
+      margin-left: 3%;
   }
   .item{
       width: 100%;
@@ -42,4 +52,7 @@
       font-size: 1.4em;
       color: aliceblue;
       background-color:#1890ff;
+  }
+  .clearfix{
+      margin-top: 50px;
   }

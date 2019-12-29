@@ -1,7 +1,8 @@
 import React from 'react'
-import { Avatar,Form,Input,Modal,Tooltip,Icon,Cascader,Select,Row,Col,Checkbox,Button,AutoComplete } from 'antd';
+import { Avatar,Form,Input,Modal,Radio,Select,Row,Col,Checkbox,Button,AutoComplete } from 'antd';
 
 var UserAddCss=require('./useradd.css');
+const { TextArea } = Input;
 function success() {
   Modal.success({
     content: '保存成功！',
@@ -14,6 +15,16 @@ function handleChange(value) {
   }
 
 class UserAdd extends React.Component{
+  state = {
+    value: 1,
+  };
+
+  onChange = e => {
+    console.log('radio checked', e.target.value);
+    this.setState({
+      value: e.target.value,
+    });
+  };
     state = {
         confirmDirty: false,
         autoCompleteResult: [],
@@ -110,19 +121,24 @@ class UserAdd extends React.Component{
                             ],
                         })(<Input.Password  style={{width:250}}/>)}
                     </Form.Item>
-                    
-                    <Form.Item label="学号">
-                      {getFieldDecorator('number', {
-                        rules: [{ required: true, message: '请输入学号!' }],
-                      })(<Input addonBefore={prefixSelector}  style={{width:300}} />)}
+                    <Form.Item label="性别">
+                    {getFieldDecorator('gender', {
+                        rules: [{ required: true,  }],
+                      })(
+                      <Radio.Group onChange={this.onChange} value={this.state.value}>
+                        <Radio value={1}>男</Radio>
+                        <Radio value={2}>女</Radio>
+                      </Radio.Group>)}
                     </Form.Item>
-                    <Form.Item label={<span>邮箱</span>}>
+                    <Form.Item label={<span>QQ邮箱</span>}>
                                     {getFieldDecorator('email', {
                                         rules: [{ required: true, message: '请输入邮箱!', whitespace: true }],
                                     })(<Input style={{width:300}}/>)}
                     </Form.Item>
         
-
+                    <Form.Item label="自我介绍">
+                      <TextArea rows={4} autoSize />
+                    </Form.Item>
                     <Form.Item {...tailFormItemLayout}>
                       <Button onClick={success} type="primary" htmlType="submit">
                         保存

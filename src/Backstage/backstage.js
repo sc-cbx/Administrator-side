@@ -4,17 +4,14 @@ import {Link,Route,BrowserRouter,Redirect} from 'react-router-dom';
 import UserStatistics from './UserStatistics/userstatistics';
 import UserAdd from './UserAdd/useradd';
 import UserManage from './UserManage/usermange';
-import UserVerification from './UserVerification/userverification';
 import FoodFunction from './FoodFunction/foodfunction';
 import FoodAdd from './FoodAdd/foodadd';
 import FoodManage from './FoodManage/foodmanage';
-import FoodStatistics from './FoodStatistics/foodstatistics';
 import HelpFunction from './HelpFunction/helpfunction';
 import HelpAdd from './HelpAdd/helpadd';
 import HelpManage from './HelpManage/helpmanage';
-import GoodoFunotionPage from './GoodoFunction/goodofunction';
-import GoodoAddPage from './GoodoAdd/goodoadd';
-import GoodoManage from './GoodoManage/goodomanage';
+import OrderFunotionPage from './OrderFunction/orderfunction';
+import OrderManage from './OrderManage/ordermanage';
 import GoodxFunctionPage from './GoodxFunction/goodxfunction';
 import GoodxAddPage from './GoodxAdd/goodxadd';
 import GoodxManage from './GoodxManage/goodxmanage';
@@ -58,10 +55,8 @@ export default class Backstage extends React.Component{
                                     <Menu.Item key="1"><Link to="/userstatistics">统计分析</Link></Menu.Item>
                                     <Menu.Item key="2"><Link to="/useradd">添加用户</Link></Menu.Item>
                                     <Menu.Item key="3"><Link to="/usermange">管理用户</Link></Menu.Item>
-                                    <Menu.Item key="4"><Link to="/userverification">游客</Link></Menu.Item>
                                 </SubMenu>
                                 <SubMenu key="sub2" title={ <span> <Icon type="mail" /> <span>食品速购管理</span></span>}>
-                                        <Menu.Item key="1"><Link to="/foodstatistics">统计分析</Link></Menu.Item>
                                         <Menu.Item key="2"><Link to="/foodfunction">功能管理</Link></Menu.Item>
                                         <Menu.Item key="3"><Link to="/foodadd">添加商品</Link></Menu.Item>
                                         <Menu.Item key="4"><Link to="/foodmanage">管理商品</Link></Menu.Item>
@@ -76,7 +71,11 @@ export default class Backstage extends React.Component{
                                         <Menu.Item key="2"><Link to="/helpadd">添加帮助</Link></Menu.Item>
                                         <Menu.Item key="3"><Link to="/helpmanage">管理帮助</Link></Menu.Item>
                                 </SubMenu>
-                                <SubMenu key="sub6" title={ <span> <Icon type="mail" /> <span>用户反馈管理</span></span>}>
+                                <SubMenu key="sub5" title={ <span> <Icon type="mail" /> <span>订单管理</span></span>}>
+                                        <Menu.Item key="1"><Link to="/orderfunction">功能管理</Link></Menu.Item>
+                                        <Menu.Item key="3"><Link to="/ordermanage">管理帮助</Link></Menu.Item>
+                                </SubMenu>
+                                <SubMenu key="sub8" title={ <span> <Icon type="mail" /> <span>用户反馈管理</span></span>}>
                                     <Menu.Item key="1"><Link to="/userbackfunction">功能管理</Link></Menu.Item>
                                     <Menu.Item key="2"><Link to="/userbackmanage">管理反馈</Link></Menu.Item>
                                 </SubMenu>
@@ -88,17 +87,14 @@ export default class Backstage extends React.Component{
                         <Route path="/userstatistics" component={UserStatistics}></Route>
                         <Route path="/useradd" component={UserAdd}></Route>
                         <Route path="/usermange" component={UserManage}></Route>
-                        <Route path="/userverification" component={UserVerification}></Route>
                         <Route path="/foodfunction" component={FoodFunction}></Route>
                         <Route path="/foodadd" component={FoodAdd}></Route>
                         <Route path="/foodmanage" component={FoodManage}></Route>
-                        <Route path="/foodstatistics" component={FoodStatistics}></Route>
                         <Route path="/helpfunction" component={HelpFunction}></Route>
                         <Route path="/helpadd" component={HelpAdd}></Route>
                         <Route path="/helpmanage" component={HelpManage}></Route>
-                        <Route path="/goodofunction" component={GoodoFunotionPage}></Route>
-                        <Route path="/goodoadd" component={GoodoAddPage}></Route>
-                        <Route path="/goodomanage" component={GoodoManage}></Route>
+                        <Route path="/orderfunction" component={OrderFunotionPage}></Route>
+                        <Route path="/ordermanage" component={OrderManage}></Route>
                         <Route path="/goodxfunction" component={GoodxFunctionPage}></Route>
                         <Route path="/goodxadd" component={GoodxAddPage}></Route>
                         <Route path="/goodxmanage" component={GoodxManage}></Route>
