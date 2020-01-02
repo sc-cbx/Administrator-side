@@ -17,15 +17,15 @@ export default class LoginPage extends React.Component {
         })
     }
     login = e=>{
-        if(this.state.username=='20181802'&&this.state.password=='ht110800'){
+        if(this.state.username=='sc-cbx'&&this.state.password=='wsx54'){
     alert('登录成功');
-    window.localStorage.setItem("username","何婷" );
+    window.localStorage.setItem("username","肖露" );
     window.localStorage.setItem("token","111");
     this.props.history.push('/homepage/first')
         }
-        else if(this.state.username=='20182606'&&this.state.password=='20182606'){
+        else if(this.state.username=='hl'&&this.state.password=='20182606'){
             alert('登录成功');
-            window.localStorage.setItem("username","肖露" );
+            window.localStorage.setItem("username","黄莉" );
             window.localStorage.setItem("token","111");
             this.props.history.push('/homepage/first')
         }
@@ -60,7 +60,7 @@ export default class LoginPage extends React.Component {
                         </div>
                     </div>
                     <div className={LoginPageCSS.land}>
-                        <Link to="/backstage" onClick={this.login}><Button>登录</Button></Link>
+                        <Link to="/backstage/userstatistics" onClick={this.login}><Button>登录</Button></Link>
                     </div>
                 </div>
             </div>
